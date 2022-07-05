@@ -1,0 +1,22 @@
+body {background-color: black;}
+h1, p{
+    color: white
+}
+h1{
+    text-align: center;
+}
+p{
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    text-align: center;
+    
+}
+img {
+    display: block;
+    /* margin-left: auto; */
+    margin-right: auto;
+    width: 30%;
+    float: left;
+    padding: 30px;
+    
+  }

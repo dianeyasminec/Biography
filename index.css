@@ -1,8 +1,115 @@
+*,*::before, *::after{
+    font-family: 'Open Sans', sans-serif;
+}
+#social{
+ position:absolute;
+ top: 3px;;
+ right: 2px;;
+ color:white;
+ margin-right: 55px;   
+}
+h1,h2{
+    text-align:center;
+    color:white
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap:1rem;
+    align-items: flex-start;
+    width: 40%;
+    height: 40%;
+    
+}
 body {background-color: black;}
-h1, p, h4, h5{
+.card.card-shadow {
+    border: none;
+    box-shadow:0 , 2px, 5px, 0, rgba(0, 0 ,0 ,.2);
+    /* width: 20%;
+    height: 20%; */
+}
+
+.card-header, .card-body,p, h1, #address {
     color: white
 }
-h1{
+a{
+    color:aquamarine
+}
+.card-header{
+    font-size: 1.5rem;
+    margin-bottom:.5rem;
+    padding: var(--padding);
+    padding-bottom:0;
+}
+.card-footer {
+    margin-top: 1rem;
+    padding: 0 var(--padding);
+    padding-top: 0;
+}
+.card-body{
+    font-size: .9rem;
+    padding: 0 var(--padding);
+    
+}
+.btn{
+    background:hsl(200, 50%, 50%);
+    border: none;
+    color: white;
+    padding: .5em, .75em;
+    border-radius:.25em;
+    cursor: pointer;
+}
+.btn:hover, .btn:focus{
+background: hsl(200, 50%, 60%);
+}
+img {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 40%;
+    float: left;
+     padding: 30px; 
+    
+  }
+  .card-header.card-image{
+      overflow: hidden;
+      padding: 0;
+     
+  }
+  .card-header .card-image > img{
+    display : "block"; 
+    width:100% ; 
+    aspect-ratio : 16/9;
+    object-fit: cover;
+    max-height: 200px;
+    object-position: center;
+    transition: 200ms transform ease-in-out;
+  }
+  .card:hover >.card-header.card-image > img{
+      transform: scale(1.025);
+  }
+  .card{
+    /* --padding: 1rem; */
+    border: 1px solid #777;
+    border-radius: .25rem;
+    overflow: hidden;
+  
+  }
+  .container {
+    padding: 2px 16px;
+  }
+  p{
+      font-size: 1.4rem;
+      margin-bottom: .5rem;
+  }
+  /* .lists{
+  
+   
+      } */
+
+      
+
+/* h1{
     text-align: center;
 }
 p{
@@ -10,13 +117,4 @@ p{
     word-spacing: 4px;
     text-align: center;
     
-}
-img {
-    display: block;
-    /* margin-left: auto; */
-    margin-right: auto;
-    width: 30%;
-    float: left;
-    padding: 30px;
-    
-  }
+} */
